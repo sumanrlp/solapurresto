@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Survey</title>
+
+    <style>
+        body {
+            background-image: url(foodbg.jpeg);
+            
+        }
+        #main {
+            position: absolute;
+            width: 40%;
+        
+            box-shadow: 0 0 5px black;
+            margin: 2% 30% 2% 30%;
+            background-color: rgb(153, 67, 28);
+            
+        }
+        tr {
+            line-height: 50px;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form style="color: white;">
+            <table style="padding-left: 40px;">
+                <h1 style="text-align: center;">Quick Survey</h1>
+                <tr>
+                    <th>
+                        <label>Name : </label>
+                        <input type="text" minlength="3" maxlength="15" required placeholder="Enter your Name" >
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Email : </label>
+                        <input type="email" pattern=".+@gmail.com" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="mobile">Mobile No. : +91 </label>
+                        <input type="text" id="mobile" required minlength="10" maxlength="10" pattern="[0-9]{10}">
+                    </th>
+                </tr>
+                <tr>
+                    <th style="padding-left: 50px;">
+                        <label for="">Hotel Management : </label>
+                        <input type="radio" name="rate"> <label for="">Worse</label>
+                        <input type="radio" name="rate"> <label for="">Good</label>
+                        <input type="radio" name="rate"> <label for="">Excellent</label>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="">Taste Of Food :</label>
+                        <input type="radio" name="food"> <label for="">Worse</label>
+                        <input type="radio" name="food"> <label for="">Good</label>
+                        <input type="radio" name="food"> <label for="">Excellent</label>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th style="padding-left: 40px; float: left;">
+                        <label for="sel">Waiter rating :</label>
+                        <select name="sel" id="sel" style="background-color: blueviolet; color: white; padding: 5px 100px;">
+                            <option value="5">5 out of 5</option>
+                            <option value="4">4 out of 5</option>
+                            <option value="3">3 out of 5</option>
+                            <option value="1">1 out of 5</option>
+                        </select>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="overall">Overall Experience : </label>
+                        <input type="radio" name="overall"> <label for="">Worse</label>
+                        <input type="radio" name="overall"> <label for="">Good</label>
+                        <input type="radio" name="overall"> <label for="">Excellent</label>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="">Any Suggestions : </label>
+                        
+                            <div style="text-align: left; padding-left: 50px;">
+                                <input type="checkbox" style="padding-left: 50px;"> <label for="">Need to Improve Taste of the food</label><br>
+                            
+                                <input type="checkbox" style="padding-left: 50px;"> <label for="">Need to Improve Waiter behaviour</label><br>
+                        
+                                <input type="checkbox" style="padding-left: 50px;"> <label for="">Need to Improve Cleaning</label>
+                            </div>
+                        
+                        
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        Any Comments : 
+                    </th>
+                </tr>
+
+                <tr>
+                    
+                    <th>
+                        
+                        <textarea name="Comments" id="Comments" cols="30" rows="5"></textarea>
+                    </th>
+                </tr>
+
+                
+                
+            </table>
+
+            <div style="text-align: center; margin-bottom: 20px; margin-top: 20px;">
+                <input type="reset" style="text-align: center; padding: 5px 40px; background-color: blueviolet; color: white; margin-right: 70px; box-shadow: 0 0 3px black;">
+                <input type="submit" style="text-align: center; padding: 5px 40px; background-color: blueviolet; color: white; box-shadow: 0 0 3px black;">
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    
+    <style>
+
+        @font-face {
+            font-family: 'lighten';
+            src: url(fonts/SourceSansPro-Light.ttf);
+        }
+
+        body {
+            margin: 0%;
+        }
+        #tophome {
+            height: 7vw;
+            width: 100%;
+            background-color: rgb(252, 251, 249);
+            position: sticky;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            top: 0px;
+            right: 0px;
+            z-index: 3;
+        }
+
+        #section1 {
+            height: 61vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(p2.jpg);
+            background-size: cover;
+
+        }
+
+        #tophome button {
+            
+            background-color: rgb(252, 251, 249);
+            border-radius: 5px;
+            border: none;
+            padding: 5px 15px;
+            font-size: 2vw;
+            
+        }
+
+        #tophome button:hover {
+            background-color:rgb(196, 135, 93);
+            color: white;
+        }
+        #menu {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        
+        .menu span {
+            width: 35vh;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .menuimg {
+            border: 0.5vw solid white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px black;
+            width: 17vw;
+            height: 17vw;
+        }
+        .menuname1 div {
+            text-align: center;
+            width: 17vw;
+            margin-top: 1vw;
+            height: 5vw;
+        }
+        .menuname1 h2 {
+            margin: 0%;
+            font-size: 2vw;
+        }
+        .menuname2 h2 {
+            margin: 0%;
+            font-size: 2vw;
+        }
+        .menuname2 div {
+            text-align: center;
+            width: 17vw;
+            margin-top: 1vw;
+            height: 5vw;
+        }
+        #about {
+            width: 100%; height: 40vw; margin-top: 2vw;
+            margin-bottom: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #aboutimg {
+            width: 35vw;
+            height: 35vw;
+            float: left;
+            margin: auto;
+            background-image: url(bg3.png);
+            background-position: center;
+            background-size: cover;
+            border:1vw solid lightsalmon;
+            margin-left: 8vw;
+            border-radius: 10px;
+        }
+        #feedback {
+            width: 100%;
+            height: 14vw;
+            border-bottom: 2px dotted lightcoral; 
+            border-top: 2px dotted lightcoral; 
+            margin-bottom: 4vw; 
+            font-family: 'lighten'; 
+            color: chocolate; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #contact {
+            width: 100%;
+            height: 12vw;
+            background-color: lightsalmon;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #contact img {
+            width: 8vw;
+            height: 8vw;
+            margin-top: 1.5vw;
+           
+        }
+        #contact h2 {
+            font-size: 1.5vw;
+        }
+        
+        #footer {
+            height: 21vw;
+            width: 100%;
+            background-color: black;
+        }
+        #footer #img{
+            
+            background-image: url(footer.jpg);
+            background-size: cover;
+            opacity: 0.2;
+            position: absolute;
+            width: 100%;
+            height: 21vw;
+
+        }
+        #bottom {
+            width: 100%;
+            height: 8vw;
+            background-color: black;
+            border-top: 2px dotted lightsalmon;
+        }
+        #feedback button:hover {
+            box-shadow: 0 0 5px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="tophome">
+        <div style="height: 100%; float: left; display: flex;margin-left: 20px; align-self: flex-start;">
+            <img src="p1.jpg" alt="" style="height: 5vw; border: none; border-radius: 5px; margin: auto; display: flex;">
+        </div>
+        
+        <div style="height: 100%; display: flex; align-items: center;">
+            <a href="#section1"><button>
+                Home
+            </button></a>
+            <a href="#menu"><button>
+                Menu
+            </button></a>
+            <a href="#about"><button >
+                About
+            </button></a>
+            <a href="#contact"><button >
+                Contact
+            </button></a>
+        </div>
+    </div>
+
+    <div id="section1" style="margin: 0%; line-height: calc(2vw);">
+        <div style=" text-align: center; color: white; display: flex; flex-direction: column;">
+            <h1 style="margin: 0%; padding-top: 30px; font-size-adjust: var(align-content); font-size: calc(4vw);">Welcome To </h1>
+            <h1 style="font-size: calc(6vw); font-style: italic;">Solapur’s Restaurant</h1>
+        </div>
+
+        <div style="height: 65%; text-align: center; color: white;">
+            <p style="margin: 0%; line-height: calc(1vw+20px); text-align: center; font-size: 1.3vw;">Solapur’s food mostly consists of many delicious Maharashtrian dishes as well as few others, such as: <br>
+
+                Batata Bhaji – A curry of diced boiled potatoes, spiced with turmeric, green chillies, ginger & mustard. <br>
+                Usal – a curry made with sprouted beans (mung or any other bean sprouts. <br>
+                Vada – Fried snacks, made with flour and vegetables like potato (Batata Vada), coriander (Kothmbir Vadi).</p>
+        </div>
+    </div>
+
+    <div style=" height: 75vw; background-color: #ffffff;" class="menu" id="menu">
+
+        <h2 style="text-align: center; background-color: tomato; font-size: 3.5vw; margin-top: 1vw;">----- Menu -----</h2>
+
+        <div style="height: 17vw; display: flex; justify-content: space-evenly; margin: 0%;" class="menuimg1" >
+            <div id="kb">
+                <a href=""><img  class="menuimg" src="kadakbhakari.jpg" alt="" ></a>
+            </div>
+            <div id="pb" >
+                <a href=""><img class="menuimg" src="pavbhaji.jpeg" alt="" ></a>
+            </div>
+            <div  id="vp">
+                <a href=""><img class="menuimg" src="vadapav2.jpg" alt="" ></a>
+            </div>
+        </div>
+        <div class="menuname1" style="display: flex; justify-content: space-evenly; height: 2vh; margin: 0%;">
+            <div>
+                <h2>Kadak Bhakari.</h2>
+            </div>
+            <div  id="pbname">
+                <h2>Pav Bhaji.</h2>
+            </div>
+            <div id="vpname">
+                <h2>Vada Pav.</h2>
+            </div>
+        </div>
+
+        <div style="height: 17vw; margin-top: 2%; display: flex; justify-content: space-evenly;" class="menuimg2">
+            <div id="hg">
+                <a href=""><img  class="menuimg" src="huggi1.jpg" alt=""></a>
+            </div>
+            <div id="bv">
+                <a href=""><img  class="menuimg" src="bharalivangi.jpg" alt="" ></a>
+            </div>
+            <div  id="sp">
+                <a href=""> <img  class="menuimg" src="shengapoli.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="menuname2" style="display: flex; justify-content: space-evenly; margin-bottom: 8vw; border-bottom: 2px dotted chocolate; height: 5vw;">
+            <div  id="hgname">
+                <h2>Huggi</h2>
+            </div>
+            <div id="bvname">
+                <h2>Bharali vangi</h2>
+            </div>
+            <div  id="spname">
+                <h2>Shengachi Poli.</h2>
+            </div>
+            
+        </div>
+
+        
+        
+       
+    </div>
+
+    <div id="about" >
+
+        <div id="aboutimg">
+
+        </div>
+
+        <div id="aboutcontent" style="text-align: center; margin-right: 10%; width: 40%; float: right; ">
+            <h1 style="font-size: 2.7vw;">Welcome to Solapur’s Restaurant</h1>
+            <p style="font-size: 1.4vw;">Little story</p>
+            <p style="font-size: 1.3vw; opacity: 0.7; line-height: 2.5vw; z-index: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem.</p>
+            <p style="font-size: 1.3vw; line-height: 2.5vw; opacity: 0.7; z-index: 1;">Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+        </div>
+    </div>
+
+    <div id="feedback">
+        <h2 style="font-size: 2vw;">We are Taking a Quick survey for our better Survice</h2>
+        <p style="font-size: 1.3vw; margin-top: 0%;">Please give your valuable feedback</p>
+        <a href="feedbackform.html" target="_blank"><button style="background-color: chocolate; color: white; padding: 0.4vw 2.5vw; border-radius: 5px; border: none; font-size: 1.3vw;">Click here to give feedback</button></a>
+    </div>
+
+    <div id="contact" >
+        <div style="width: 33%; height: 100%; color: white;float: left;">
+            <div style="float: left; margin-left: 12vw;">
+                <img src="call.png" alt="">
+            </div>
+            <div style="float: right;">
+                <h2>Phone :</h2>
+                <h2>+91 012 345 6789</h2>
+            </div>
+        </div>
+        
+        <div style="width: 30%; height: 100%; color: white;float: right; ">
+            <div style="float: left;">
+                <img src="mail.png" alt="">
+            </div>
+            <div style="float: right;">
+                <h2>Email :</h2>
+                <h2>potdarrushi1705@gmail.com</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div id="img">
+
+        </div>
+        <div style="height: 20vw; width: 20%; background-color: none; display: inline; position: absolute; margin: 2vw 10%; color: white; font-family: 'lighten';">
+            <h2 style="font-size: 2vw">ABOUT US</h2>
+            <p style="opacity: 0.8 ; line-height: 2vw; font-size: 1vw" >Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.
+
+            </p>
+        </div>
+        <div style="height: 20vw; width: 20%; background-color: none; display: inline; position: absolute; margin: 2vw 10% 5vh 40%; font-family: 'lighten'; color: white;">
+            <h2 style="font-size: 2vw">OPENING HOURS</h2>
+            <p style="font-size: 1vw; opacity: 0.8 ; line-height: 3vw;">Monday: Closed <br >
+
+                Tue-Wed : 9:Am - 10PM <br />
+                
+                Thu-Fri : 9:Am - 10PM <br />
+                
+                Sat-Sun : 5:PM - 10PM</p>
+        </div>
+        <div style="height: 20vw; width: 20%; background-color:none; display: inline; position: absolute; margin: 2vw 10% 5vh 65%; color: white; font-family: 'lighten';">
+            <h2 style="font-size: 2vw">CONTACT INFORMATION</h2>
+            <p style="font-size: 1vw line-height: 2.5vw; font-size: 1.1vw; opacity: 0.8;">Chatrapati Shivaji Chowk,<br>
+                Near Bus-Stand <br>
+                 Main Road, <br>
+                Solapur. 413001
+
+        </div>
+        <a href="http://www.instagram.com/rishi_potdar" target="_blank"><img src="insta.png" alt="" style="position: absolute; margin-top: 17vw; margin-left: 82%;height: 3.3vw; width: 3.3vw"></a>
+        <a href="https://www.facebook.com/rushikesh.potdar.148" target="_blank"><img src="fb.png" alt="" style="position: absolute; margin-top: 17vw; margin-left: 87%;height: 3.3vw; width: 3.3vw"></a>
+
+        
+    </div>
+
+    <div id="bottom" style="text-align: center; font-family: 'lighten'; color: white;">
+        <p style="font-size: 1.5vw">All Rights Reserved. © 2021 Solapur’s Restaurant Design By : rishi potdar</p>
+    </div>
+</body>
+</html>
